@@ -19,7 +19,14 @@ begin
 
      end;
 
+     if prim <> nil then
+     begin
      Net := Prim.Net;
+     end
+     else
+     begin
+     exit;
+     end;
 
      if (Prim.ObjectId = eConnectionObject) then
      begin
